@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello !{% endblock %}
+
+{% block body %}
+
+    <table style="width:100%;">
+        <tr>
+            <td>Pseudo</td>
+        </tr>
+        {% for profile in profile %}
+            <tr>
+                <td>{{ profile.pseudo }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
